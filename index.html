@@ -1,0 +1,166 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Claire Lee's portfolio</title>
+  <meta name="description" content="Claire Lee's portfolio website">
+  <meta name="author" content="claireelee">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/res/transparentlogo.png">
+  <script src="https://kit.fontawesome.com/f569ccc368.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="body">
+  <div class="navcontainer">
+    <div class="navbar">
+      <div class="logo">
+        <a href=index.html>Claire Lee</a>
+      </div>
+      <div class="links">
+        <a onclick="scrollToElement('projects', 'start')">Projects</a>
+        <a onclick="scrollToElement('about', 'start')">About</a>
+        <a onclick="scrollToElement('main', 'start')">Home</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main" id="main">
+    <h1>
+      Hi, I'm Claire. <br>
+      I help connect <span class="test">technology and people</span>.
+    </h1><br>
+    I’m passionate about blending my knowledge of design, business, and technology to create inclusive, people-oriented UI/UX. <br><br>
+    This summer, I’ll be working as a UX Design intern at Workday. <br><br><br><br>
+    <h3><span class="highlight"><a href="assets/res/resume.pdf" target="_blank">RESUME</a></span></h3> <br><br><br><br>
+    <br><br><br><br>
+    <div class="scroll">
+      <div class="icon" onclick="scrollToElement('about', 'start')">
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="maincolumn" id="about">
+    <div class="columnleft">
+      <div class="columntextcontainer">
+        <h2>A little about me.</h2> <br>
+        Nice to meet you, I’m Claire! I'm an undergraduate student studying Business Administration and Human-Computer Interaction at Carnegie Mellon University. <br><br>
+        
+        Broadly speaking, I'm passionate about exploring how design can better incorporate inclusivity for people-oriented technolgies.<br><br>
+        
+        With my multidisciplinary background in Business and HCI, I have a unique perspective to offer in utilizing UX research and design to bridge the information gap between businesses and consumers. 
+        Ultimately, I want to work towards creating a more efficient interaction space between firms and customers.<br><br>
+        
+        I currently work as a UX designer at The Student Community, a CMU startup. This summer, I’ll be working as a UX design intern at Workday. <br><br>
+      </div>
+      <div class="columngifcontainer">
+        <br><br><img src="assets/res/maingif.gif">
+      </div><br><br>
+      <div><br><br></div>
+    </div>
+    <div class="columnright">
+      <div class="columnimagecontainer">
+        <img src="assets/res/portrait.jpeg">
+      </div>
+      <div class="columntextcontainer">
+        <br>
+        <h2>Me, outside of work.</h2> <br>
+        Outside of school and work, I enjoy creating and expressing myself through a variety of outlets, like bullet journaling, doodling, and experimenting in my kitchen. 
+        I'm currently in the process of perfecting an original Korean-Italian fusion pasta recipe! <br><br>
+        I also spend a lot of time with my lovely dog, a long-haired Chihuahua named Louie. Our favorite activities include napping and eating snacks. <br><br>  
+      </div><br><br>
+    </div>
+    <div><br><br></div>
+  </div>
+
+  <div class="scroll-dummy">
+    <div class="scroll">
+      <div class="icon" onclick="scrollToElement('projects', 'start')">
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="maincolumn" id="projects">
+    <div class="columnleft">
+      <div class="imagecontainer" id="img-container">
+        <img src="assets/res/classinsightmain.png" class="carousel-image" style="opacity: 1" id="img1">
+        <img src="assets/res/moneyversitymain.png" class="carousel-image" style="opacity: 0" id="img2">
+        <img src="assets/res/skinfomain.png" class="carousel-image" style="opacity: 0" id="img3">
+      </div>
+    </div>
+    <div class="columnright">
+      <div class="columntextcontainer" id="project1">
+        <h2>ClassInSight</h2><br>
+        <h3>TEAM</h3>
+        Dr. Amy Ogan - Advisor <br>
+        Franceska Xhakaj - Pricipal Investigator <br>
+        Katrina Hu<br>
+        Amy Luo<br>
+        Emma Jiang<br>
+
+        <br>
+        <h3>ROLE</h3>
+        Research Assistant, UI/UX Design and Data Analysis <br><br>
+        <h3>DESCRIPTION</h3>
+        ClassInSight is a smart classroom technology developed at Carnegie Mellon University. It uses sensors to capture anonymized student and teacher nonverbal data, with the goal of improving teacher efficacy through nonverbal behavior analysis. 
+        Since August 2020, I've been working with the ClassInSight team to develop data visualization components for the ClassInSight interface. <br><br><br><br>
+        <a href="classinsight.html"><h3>READ MORE <i class="fas fa-angle-double-right"></i></h3></a>
+      </div>
+      
+      <div class="columntextcontainer" id="project2">
+        <h2>Moneyversity</h2><br>
+        <h3>TEAM</h3>
+        Anna Yuan <br>
+        Jamie Park <br>
+
+        <br>
+        <h3>ROLE</h3>
+        UI/UX Design, Research & Data Analysis <br><br>
+        <h3>DESCRIPTION</h3>
+        Did you know that nearly two-thirds of Americans can't pass a basic test on financial literacy? Amid the COVID-19 pandemic, the need for better financial literacy skills has never been so present.
+        To help address this issue, we created Moneyversity, a game-based online learning platform that aims to help young adults improve their financial literacy skills and apply them to real-world scenarios. 
+        Over the course of the Fall 2020 semester, my team and I designed this platform concept from ideation to final prototype. <br><br><br><br>
+        <a href="moneyversity.html"><h3>READ MORE <i class="fas fa-angle-double-right"></i></h3></a>
+      </div>
+      
+      <div class="columntextcontainer" id="project3">
+        <h2>Skinfo</h2><br>
+        <h3>TEAM</h3>
+        Solo Project - Just for fun!<br>
+
+        <br>
+        <h3>ROLE</h3>
+        UI/UX Research & Design <br><br>
+        <h3>DESCRIPTION</h3>
+        Skinfo is a skincare-oriented habit tracking and information sharing platform that aims to help users make informed decisions about their skincare habits and purchases.
+            Especially since the COVID-19 pandemic, interest in skincare has been on the rise. The problem is, skincare is highly individualized and multifaceted, and there is no one-product-fits-all.
+            Skinfo takes a consistent, long-term data collection approach to generate the personalized information that skincare users want to know. <br><br><br><br>
+        <a href="skinfo.html"><h3>READ MORE <i class="fas fa-angle-double-right"></i></h3></a>
+      </div>
+    </div>   
+  </div>
+
+  <div class="footer">
+    <h2>Thanks for stopping by!</h2>
+    Feel free to reach out, I'm always happy to chat. We can talk about my work or we can trade pet pictures and recipes!<br><br><br>
+    <a href="mailto:seoyounl@andrew.cmu.edu"><i class="far fa-envelope"></i> &nbsp; seoyounl@andrew.cmu.edu</a> <br>
+    <a href="https://www.linkedin.com/in/claire-seoyoung-lee/"><i class="fab fa-linkedin"></i> &nbsp; linkedin.com/in/claire-seoyoung-lee</a><br>
+    <a href="https://www.instagram.com/clairee.lee/"><i class="fab fa-instagram"></i> &nbsp; @clairee.lee</a>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+
+<div class="bottom">
+  <div class="vflex fixed links">
+    <a href="mailto:seoyounl@andrew.cmu.edu"><i class="far fa-envelope"></i></a><br>
+    <a href="https://www.linkedin.com/in/claire-seoyoung-lee/"><i class="fab fa-linkedin"></i></a><br>
+    <a href="https://www.instagram.com/clairee.lee/"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+</html>

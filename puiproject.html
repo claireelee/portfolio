@@ -1,0 +1,177 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Claire Lee</title>
+    <meta name="description" content="Claire Lee's portfolio website">
+    <meta name="author" content="claireelee">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/f569ccc368.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body class="body">
+    <div class="navcontainer">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">Claire Lee</a>
+        </div>
+      </div>
+      <div class="top-fade"></div>
+    </div>
+    <br><br>
+    
+    <div class="content" id="content">
+      <br><br><br><br>
+      <div class="row">
+        <img src="res/puimain.png" alt="portrait" class="portrait" style="width:100%"> 
+      </div><br>
+
+      <div class="row">
+        <h1><b>Programming Usable Interfaces - Assignment Sequence</b></h1>
+        <h3 class="highlight">
+          Applying foundational design thinking skills to HTML-CSS-Javascript to create usable, thoughtfully designed interfaces
+        </h3><br>
+
+        <h3><b>Introduction</b></h3>
+        <p class="justify">
+          Programming Usable Interfaces is a core course offered under Carnegie Mellon University's Human-Computer Interaction program. 
+          The class covers a range of relevant topics and skills in UI/UX design: iterative design, input-output techniques, how to design and evaluate interfaces, and research topics that will impact the future of UI.
+          In this assignment, we covered a number of prototyping tools and techniques. 
+          Using these skills, I took a simple business concept and created UI prototypes in various stages of fidelity, ranging from paper prototypes to animated mockups to fully functional programs.<br><br>
+          We had a number of business concepts to choose from, and I chose a concept called "Bun Bun Bake Shop," an artisan cinnamon roll shop that offers delivery in the Pittsburgh area.
+          <br><br>
+          This is an ongoing class design project. 
+          The ultimate goal is to familiarize myself with various design/evaluation/prototyping skills and become more proficient in HTML-CSS-Javascript.
+          <br><br>
+          <div class="main-box">
+            <p class="justify">
+              <b>QUESTION</b>
+            </p>
+            <h2>
+              How can I iteratively design a <span class="highlight">customer-friendly usable interface that highlights the business's value proposition</span> for its consumers?
+            </h2>
+          </p>
+          </div><br>
+      
+        <h3><b>Ideation</b></h3>
+        <p class="justify">
+          <img src="pui/1stconcept.JPG" alt="assignment details" class="portrait" style="width:100%">
+          <i>Project background</i><br><br>
+          Coming from a business background, I think that one of the main considerations in my designs is how I can highlight my client's value proposition to customers.
+          That is: in what ways does this firm seek to benefit its customers? How can I highlight these benefits and make them accessible to users? <br><br>
+          For Bun Bun Bake Shop, that value was customizability. 
+          Their product offering was simple: 6 roll flavors, 4 glaze flavors, and 4 quantities. 
+          However, customers can choose any combination of these three attributes, which greatly increases their product variety.
+          I centered my designs for Bun Bun Bake Shop around emphasizing this flexible product selection process.
+        </p><br><br>
+
+        <h3><b>Paper Prototyping</b></h3>
+        <p class="justify">
+          <img src="pui/prototype1.JPG" alt="assignment details" class="portrait" style="width:31%">
+          <img src="pui/prototype2.JPG" alt="assignment details" class="portrait" style="width:31%">
+          <img src="pui/prototype3.JPG" alt="assignment details" class="portrait" style="width:31%">
+          <i>Initial paper prototypes</i><br><br>
+          I started out by taking the concept and creating some rough (~20 minute) "paper" prototypes, playing around with different information architecture and layouts.
+          The goal was to get a diverse range of ideas onto the drawing board, so that I could go back and refine the most effective bits and pieces into the next iteration of my prototype.
+          <br><br>
+          Since I intended to use these prototypes in a user test, I had to go back and clean them up a little bit. 
+          I converted the largely illegible handwritten text to type, and did some element grouping/reordering that would smooth the process of my virtual paper prototype testing session.
+        </p><br><br>
+
+      <h3><b>User Testing on Paper Prototype</b></h3>
+      <p class="justify">
+        For my user test, I started out by assigning the test user a certain task (in this case, it was to order a certain type of cinnamon roll).
+        Once my test user successfully completed the task, we walked through the prototype together and the user had the opportunity to ask clarifying questions or make comments about the prototype.
+        <br><br>
+        I wanted to get a fresh pair of eyes on these designs, especially since I frequently order food online - what might seem intuitive to me might be confusing to someone else. 
+        I was also curious to see which designs would take the user the least amount of time and "clicks" to accomplish their given task. 
+      </p><br><br>
+
+      <div class="left-box">
+        <p class="justify">
+          <b>INSIGHTS FROM PRELIMINARY USER INTERVIEW</b>
+        </p>
+        <p class="justify">
+          <h2>1. I need to identify <span class="highlight">user expectations and standard practices</span> of online purchasing platforms.</h2> 
+          There are common practices across online purshasing platforms (i.e. locations of certain features/information) that allow users to easily navigate towards the ultimate goal of making a purchase, even if it's their first time using the platform.
+          On the flip side, users might have trouble figuring out UIs that deviate from these practices.  
+        </div>
+  
+      <div class="right-box">
+        <p class="justify">
+          <h2>2. Users prefer UIs with <span class="highlight">information architecture that matches the content scope and depth.</span></h2> 
+            One prototype heavily referenced big-name online shopping UIs.
+            While emulating these UIs enabled my user to easily figure out how to use this particular design, I noticed that it took more clicks and more time to complete the purchase task. 
+            My test user noted this as well, saying that a simpler layout might have better represented the limited product selection of Bun Bun Bake Shop. 
+      </div>
+      
+      <br><br>
+    <h3><b>Final Wireframe</b></h3>
+    <p class="justify">
+      I used the insights gained from my preliminary user test to create a finalized initial wireframe. 
+      I decided on a one-page order form layout that refreshed once the product was added to the cart (think Chipotle).
+      Based on the task completion times and my test user's feedback, I felt that this was the most comprehensive layout. 
+      This design also emphasizes the customizable aspect of Bun Bun Bake Shop's products, which fell right in line with my goal of highlighting the flexible product selection process. 
+      <br><br>
+      <img src="pui/prototypefinal-annotation.JPG" alt="portrait" class="portrait" style="width:97%">
+      <i>Final wireframe</i><br><br>
+
+    <h3><b>Prototyping on Figma</b></h3>
+    <p class="justify">
+      For the next stage of the assignment, I converted the wireframe to a high-fidelity prototype on Figma. 
+      I added some more pages with increased functionality, allowing users to save past orders/favorite items, find a store location near them, and make an account.
+      I also added more to the checkout process, closely referencing other online purchase UIs to get an idea of what users expect to see on their purchase journey.
+
+      <br><br>
+      <img src="pui/sitemap.JPG" alt="portrait" class="portrait" style="width:97%"> 
+       <i>Basic sitemap</i><br><br>
+
+       <img src="pui/Login.png" alt="portrait" class="portrait" style="width:31%">
+       <img src="pui/Location - before.png" alt="portrait" class="portrait" style="width:31%"> 
+       <img src="pui/Location - after.png" alt="portrait" class="portrait" style="width:31%">  
+       <i>New features: login, location</i><br><br>
+
+       <img src="pui/Order - New.png" alt="portrait" class="portrait" style="width:48%">
+       <img src="pui/Order - 8.png" alt="portrait" class="portrait" style="width:48%">  
+       <i>Order form before and after selections</i><br><br>
+
+       <img src="pui/Order - Favorites.png" alt="portrait" class="portrait" style="width:48%">
+       <img src="pui/Order - Previous.png" alt="portrait" class="portrait" style="width:48%">  
+       <i>Order saving options: favorites and previous orders</i><br><br>
+
+       I also linked some of the pages together using the Figma prototyping tool so you can click through it as if it was a real website! <br><br>
+       Check it out below: <br><br>
+       <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtkeM78HWOUA5DUFjmHitpb%2FPUI-Assignment-3-Claire-Lee%3Fkind%3D%26node-id%3D1%253A2%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+    </p>
+    <p class="justify">
+      This project is ongoing, but I'll be updating with any progress I make!
+    </p><br><br>
+
+    
+ <br><br>
+  
+          <div class="pull-right">
+            <a href="classinsight.html"><h3>View Project: ClassInSight <i class="fas fa-angle-double-right"></i></h3></a>
+          </div>
+       
+    </div><br><br>    
+
+  <div class="footer"></div>
+
+  <div class="bottom-fade"></div>
+
+  <script src="src/script.js"></script>
+</body>
+
+<div class="bottom">
+  <div class="vflex fixed links">
+    <a href="mailto:seoyounl@andrew.cmu.edu"><i class="far fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/claire-seoyoung-lee/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/clairee.lee/"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+  /* colors */
+:root {
+    --fg: #333333;
+    --bg: #ffffff;
+    --accent: #6999c9;
+    --accentbg: #ebf6ff;
+    --accentlight: #e5eff9;
+    --transparent-white: rgba(255,255,255,0);
+    --transparent-black: rgba(0,0,0,0);
+}
+
+html {
+    font-family: Karla;
+    background-color: var(--bg);
+    color: var(--fg);
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+  /* text styles */
+
+h1 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 1.8;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: Karla;
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+  /* main div containers */
+
+.main {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    padding: 2em;
+}
+
+.maincolumn {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    display: grid;
+}
+
+.columnleft {
+    grid-column: 1 / span 1;
+    grid-row: 1/ span 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--accentlight);
+    width: 100%;
+    flex-direction: column;
+}
+
+.imagecontainer {
+    top: 70.5px;
+    width: 100%;
+    height: calc(100vh - 70.5px);
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.carousel-image {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.5s ease;
+}
+
+.columntextcontainer {
+    max-width: 60%;
+    margin: 15%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.columnright {
+    grid-column: 2 / span 1;
+    grid-row: 1/ span 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.columnimagecontainer{
+    max-width: 100%;
+    height: auto;
+}
+
+.columngifcontainer{
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+.projectcontainer {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* for the homepage text highlight animation */
+.test {
+    position: relative;
+  }
+  .test:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo element right under the content */
+    top: 0;
+    left: 0;
+    background: var(--accentlight);
+    animation-name: highlight;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate; /* Make the animation run back and forth */
+  }
+  
+  @keyframes highlight {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+  
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  /* navigation bar settings */
+
+.navcontainer {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar {
+    overflow: hidden;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: var(--bg);
+}
+
+.navbar .logo {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar .links a {
+    float: right;
+    display: block;
+    padding: 10px;
+}
+
+.navbar .links a:hover{
+    font-weight: 700;
+}
+
+  /* scroll button div*/
+
+.scroll-dummy {
+    position: relative;
+    margin-top: -10%;
+    margin-bottom: 5%;
+}
+
+.scroll {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.scroll .icon {
+    font-size: 2em;
+    margin: auto;
+    transition: font-size 100ms;
+}
+
+.scroll .icon:hover {
+    font-size: 3em;
+    color: var(--accent);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .row {
+    width: 60%;
+    max-width: 50em;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: var(--accentlight);
+    height: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+}
+
+.fixed {
+    position: fixed;
+    padding: 16px;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+.vflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.hflex {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.hflex-flow {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+  /* contact info in fixed sidebar */
+
+.bottom .contact {
+    left: 0;
+    bottom: 0;
+}
+
+.bottom .contact .phone, .bottom .contact .email {
+    justify-content: left;
+}
+
+.bottom .links {
+    z-index: 4;
+    right: 0;
+    bottom: 0;
+}
+
+  /* spacers */
+
+.hspace {
+    width: 8px;
+}
+
+.vspace {
+    height: 80px;
+}
+
+.justify {
+    text-align: start;
+}
+
+.pull-left { 
+    float: left; 
+}
+
+.pull-right { 
+    float: right; 
+}
+
+.right-box {
+    position: relative;
+    left: 20%;
+    padding: 10px;
+    background-color:var(--accentbg);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 75%;
+}
+  
+.left-box {
+    padding: 10px;
+    background-color:var(--accentbg);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 75%;
+}
+  
+.main-box {
+    padding: 10px;
+    background-color:var(--accentbg);
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 90%;
+}
+
+a {
+    color: var(--fg);
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    display: flex;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .links {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .greeting .vdiv {
+        height: 8px;
+    }
+    .main .greeting .interest_box {
+        flex-direction: column;
+    }
+
+    .main .greeting .interest_box .divider {
+        font-size: 1em;
+    }
+
+    .portrait {
+        width: 100%;
+        padding: 4px;
+    }
+
+    .bottom .contact .phone, .bottom .contact .email {
+        justify-content: center;
+    }
+
+    .scroll {
+        bottom: 8px;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .content .row {
+        width: 75%;
+    }
+
+    .justify {
+        text-align: start;
+    }
+
+    .hflex-flow {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+
+}

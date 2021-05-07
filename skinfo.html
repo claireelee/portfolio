@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Claire Lee's portfolio</title>
+    <meta name="description" content="Claire Lee's portfolio website">
+    <meta name="author" content="claireelee">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/res/transparentlogo.png">
+    <script src="https://kit.fontawesome.com/f569ccc368.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  
+  <body class="body">
+    <div class="navcontainer">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">Claire Lee</a>
+        </div>
+      </div>
+      <div class="top-fade"></div>
+    </div>
+    <br><br>
+    
+    <div class="content" id="content">
+      <br><br><br><br>
+      <div class="row">
+        <img src="res/skinfomain.png" alt="portrait" class="portrait" style="width:100%"> 
+      </div><br>
+
+      <div class="row">
+        <h1><b>Skinfo</b></h1>
+        <h3 class="highlight">
+          Bridging the information gap between skincare retailers and consumers by generating data-driven skincare insights on the individual and community level
+        </h3><br>
+
+        <h3><b>Introduction</b></h3>
+        <p class="justify">
+          Skinfo is a skincare-oriented habit tracking and information sharing platform that aims to help users make informed decisions about their skincare habits and purchases. <br><br>
+          Especially since the COVID-19 pandemic, interest in skincare has been on the rise. The problem is, skincare is highly individualized and multifaceted, and there is no one-product-fits-all.
+          There are ways to address this issue, like personalized prescription skincare via online consultation. But those solutions are often difficult. And expensive.
+          Skinfo takes a consistent, long-term data collection approach to generate the personalized information that skincare users want to know.  
+          <br><br>
+          Skinfo is useful from a business perspective, too. Consumers are walking gold mines of information that could be used to advertise or iterate on a product.
+          Information like reviews, pictures, and recommendations is an important part of a product's appeal to consumers - that's why we see companies running paid review promotions or pouring millions of dollars into influencer marketing. 
+          However, it's extremely difficult to get consumers to provide this data. But what if it wasn't?     
+          <br><br>
+          This is an ongoing personal design project. I thought it would be interesting to create a skincare platform that would provide useful data for both consumers and businesses, since I've been on both sides.
+        
+          <br><br>
+          <div class="main-box">
+            <p class="justify">
+              <b>QUESTION</b>
+            </p>
+            <h2>
+              How can I <span class="highlight">integrate individual data tracking tools with online community structures</span> to give users personalized, community-backed skincare information?
+            </h2>
+          </p>
+          </div><br>
+      
+          <h3><b>Ideation</b></h3>
+        <p class="justify">
+          I'm a big skincare user, so I end up talking about it with a lot of my friends at some point. I realized that for myself and many others,
+          a common (but difficult to track) source of skincare problems was lifestyle and environment. Trying new products was also a bit of a hassle for a lot of people.
+          Personally, I use a habit tracker in my bullet journal to help keep track of some of these lifestyle patterns, but it's a lot of work. I also haven't met anyone else who does this. 
+        </p><br>
+
+        <p class="justify" id="about">
+          <img src="skfo/skincarexlsx.JPG" alt="portrait" class="portrait" align="left"> 
+          One of my other sources of inspiration was my skincare.xlsx sheet, where I log all of the products that have irritated my skin and 
+          use the magic of conditional highlighting to identify ingredients to avoid. <br><br>
+          As you can imagine, this is also inconvenient - especially for people who aren't familiar with Excel or similar softwares.
+        </p> <br><br>
+
+        Basically, I saw that skincare is difficult and requires a lot of time and monetary investment that a lot of people just don't have room for. 
+        I wanted to try and make it a little easier.
+        <br><br>
+
+      <h3><b>Preliminary User Testing</b></h3>
+      <p class="justify">
+        I started out with user interviews aimed at determining the need for a platform like Skinfo, as well as the kinds of information that users want or expect to see.
+        I separated the interview questions out into three different sections that would inform different parts of the app design: users' skincare information needs, tracker design, and community design.
+        <br><br>
+        I wanted information on what users were doing to keep track of their skincare routines, habits, and how they found new products to try. 
+        Did they need this extra skincare help? 
+        <br><br>
+        <img src="skfo/interview1.JPG" alt="portrait" class="portrait" style="width:100%">  
+        <i>Interview script and main findings</i>
+      </p><br>
+
+      <div class="left-box">
+        <p class="justify">
+          <b>INSIGHTS FROM PRELIMINARY USER INTERVIEWS</b>
+        </p>
+        <p class="justify">
+          <h2>1. Skincare users prioritize <span class="highlight">information from "real" people</span> when looking for new products.</h2> 
+          All of my interviewees indicated that they buy products that were verified and recommended by real people, like friends, Youtubers/TikTokers, or even just people in the product reviews section. 
+          50% of them said that before-and-after pictures heavily influence their purchases. 
+          The information that Skinfo would generate has a real value proposition for retailers and consumers alike.
+        </div>
+  
+      <div class="right-box">
+        <p class="justify">
+          <h2>2. Users recognize that lifestyle influences skin health, but <span class="highlight">aren't sure how to track it.</span></h2> 
+            The general consensus was that lifestyle has a recognizable impact on skin condition. 
+            When asked what habits would affect their skin, users answered: water intake, sleep, skincare product use, or diet.
+            One user indicated that the general state of these habits (good/bad) was more important than the specifics. 
+            Only one user indicated that they tracked some of these habits at all, and it was for non-skincare reasons.
+      </div>
+
+      <div class="left-box">
+        <p class="justify">
+          <h2>3. Many users have persistent skin concerns but <span class="highlight">don't know where to look for a solution.</span></h2> 
+            Most of my interviewees named at least one long-term skin concern. 
+            Users often lacked the time and resources to address these issues, and one user said "it's not bad enough to see a dermatologist, so I can't do much about it."
+            All of the users agreed that seeing personalized recommendations to resolve these issues would be helpful.
+          </p></div>
+
+        <div class="right-box">
+          <p class="justify">
+            <h2>4. Users <span class="highlight">don't formally keep track of products or routines,</span> relying mostly on recall.</h2> 
+              The majority of my interviewees said they have a skincare routine, and that they have different routines for different situations (such as day/night).
+              All the users who use a skincare routine had no particular device for keeping track of the proucts in their routine. 
+              Nobody had a routine with more than 7 products. 
+            </p>
+        </div>
+      <br><br>
+    <h3><b>Wireframing</b></h3>
+    <p class="justify">
+      I used the insights gained from our preliminary user testing to create my initial wireframe. I included components such as routine tracking (adding products into lists that represent your skincare routine), habit tracking, a main dashboard with recommendations, 
+      and a community forum where users can share their experiences with products. I also included a photo option in the daily log, so users can easily see the before-and-after of changing up their skincare routine. My intention is to make an easy path to add these pictures to
+      product reviews as well.
+      <br><br>
+      <img src="skfo/wireframe1.JPG" alt="portrait" class="portrait" style="width:93%">
+      <i>Initial wireframe</i><br><br>
+
+    <h3><b>User Testing on Wireframe/Paper Prototype</b></h3>
+    <p class="justify">
+      The second round of user testing was a simple walkthrough of the wireframe (pictured above). The goal was to identify and correct any major inconsistencies or unclear features before making a higher fidelity prototype.
+      One interesting piece of feedback I got from a test user was that the structure of the app dashboard is intuitive because it's fairly similar to mobile period trackers. 
+      I hadn't thought to compare them at all, but it made a lot of sense. I'll be referencing mobile period trackers for the following iterations of the dashboard.
+      Other feedback from my test users brought me to some features to include in the following iteration - push notification reminders, more back buttons, and a clearer navigation bar.
+      <br><br>
+
+      <br><br>
+      <img src="skfo/lowfi-login.JPG" alt="portrait" class="portrait" style="width:97%"> 
+       <i>low-fi login and account setup</i>
+    </p>
+    <p class="justify">
+      This project is ongoing, but I'll be updating with any progress I make!
+    </p><br><br>
+
+    
+ <br><br>
+  
+          <div class="pull-right">
+            <a href="puiproject.html"><h3>View Project: PUI Assignment <i class="fas fa-angle-double-right"></i></h3></a>
+          </div>
+       
+    </div><br><br>    
+
+  <div class="footer"></div>
+
+  <div class="bottom-fade"></div>
+
+  <script src="src/script.js"></script>
+</body>
+
+<div class="bottom">
+  <div class="vflex fixed links">
+    <a href="mailto:seoyounl@andrew.cmu.edu"><i class="far fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/claire-seoyoung-lee/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/clairee.lee/"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+</html>
